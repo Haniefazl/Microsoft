@@ -25,9 +25,6 @@ ul {
     list-style: none;
 }
 
-
-/* STYLING THE NAVBAR */
-
 .navbar-mobile {
     display: none;
 }
@@ -42,8 +39,50 @@ ul {
     padding: 1.3em;
 }
 
-.navbar-desktop .logo {
-    width: 10%;
+.hide {
+    display: none;
+}
+
+.input1 {
+    width: 60vw;
+    height: 40px;
+    box-shadow: 1px 1px 3px gray;
+    margin-left: 25px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.input1:before {
+    display: none;
+}
+
+.button1 {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 5px;
+    width: 50px;
+    height: 40px;
+}
+
+.button1:hover {
+    cursor: pointer;
+}
+
+.search-icon:hover {
+    border: 2px gray dashed;
+}
+
+.cart-icon:hover {
+    border: 2px gray dashed;
+}
+
+.profile-icon:hover {
+    border: 2px gray dashed;
+}
+
+.icons {
+    color: black;
 }
 
 .navbar-desktop .main-menu {
@@ -64,6 +103,10 @@ ul {
     border-bottom: 2px solid #000;
 }
 
+.navbar-desktop .main-menu li a:active {
+    border: 2px gray dashed;
+}
+
 .right-menu li:first-of-type a,
 .right-menu li:first-of-type img {
     vertical-align: middle;
@@ -72,9 +115,6 @@ ul {
 .right-menu li:first-of-type a:hover {
     border-bottom: 2px solid #000;
 }
-
-
-/* dropdown */
 
 .dropdown-mobile {
     display: none;
@@ -117,6 +157,15 @@ ul {
     text-decoration: underline;
 }
 
+.dropdown-btn:active {
+    border: 2px gray dashed;
+}
+
+.dropdown-btn.show {
+    background: #f2f2f2;
+    padding: 10px;
+}
+
 .site-map {
     text-transform: uppercase;
     text-align: center;
@@ -136,9 +185,6 @@ ul {
 .show {
     display: block;
 }
-
-
-/* STYLING THE HEADER */
 
 header {
     margin-bottom: 5rem;
@@ -244,71 +290,53 @@ header {
     display: inline-block;
 }
 
+.navigation-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
 
-/* STYLING THE SLIDER */
+.swiper-icon:active {
+    border: 2px gray dashed;
+}
 
 .swiper-button-prev,
 .swiper-button-next {
     color: #868e96;
-    visibility: hidden;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-    margin: 0 0.2rem;
-    width: 3.5rem;
-    height: 3.5rem;
-}
-
-.swiper-button-prev {
-    visibility: hidden;
-}
-
-.swiper:hover>.swiper-button-prev {
-    visibility: visible;
-}
-
-.swiper:hover>.swiper-button-next {
-    visibility: visible;
+    position: relative;
+    margin: 0 2rem;
 }
 
 .swiper-pagination-bullet {
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 1.2rem 0.5rem 0px 0.5rem !important;
+    background-color: transparent !important;
+    border: 1px solid #000;
+    opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #000;
+    background-color: #000 !important;
+    border: none;
 }
 
 .swiper-pagination {
     pointer-events: all !important;
+    position: relative;
+    width: auto !important;
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
     content: '';
 }
-
-.swiper-icon {
-    background-color: rgba(255, 255, 255, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    border: 1px solid #cacfd3;
-}
-
-.swiper-icon:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #fafafa;
-    border: none;
-}
-
-
-/* STYLING THE DEVICES SECTION */
 
 .devices {
     width: 90%;
@@ -342,9 +370,6 @@ header {
 .devices div:nth-of-type(3) .devices-text {
     width: 88%;
 }
-
-
-/* STYLING THE PRODUCTS SECTION */
 
 .products {
     margin-bottom: 5rem;
@@ -408,9 +433,6 @@ article .new {
     margin-top: 0.5rem;
 }
 
-
-/* STYLING THE XBOX SECTION */
-
 .xbox {
     background: url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Slim-Multi-Canvas-AEM-Xbox-Elderberry:VP5-1596x600') no-repeat center/cover;
     width: 100%;
@@ -456,9 +478,6 @@ article .new {
     color: #fff;
 }
 
-
-/* STYLING THE MICROSOFT BUSINESS SECTION */
-
 .microsoft-business {
     margin-bottom: 5rem;
 }
@@ -475,9 +494,6 @@ article .new {
 .microsoft-business article:nth-of-type(3) a {
     display: block;
 }
-
-
-/* STYLING THE MICROSOFT COMMUNITIES SECTION */
 
 .communities {
     margin-bottom: 5rem;
@@ -519,9 +535,6 @@ article .new {
     margin-bottom: 1.9rem;
 }
 
-
-/* STYLING THE CONNECT WITH MICROSOFT SECTION */
-
 .connect {
     margin-bottom: 5rem;
 }
@@ -540,9 +553,6 @@ article .new {
 .connect a img {
     width: 2.7%;
 }
-
-
-/* STYLING THE FOOTER */
 
 footer {
     background-color: #f2f2f2;
@@ -600,7 +610,6 @@ footer .footer-end .footer-end-links {
 
 footer .footer-end .footer-end-links li {
     margin-right: 1.25rem;
-    min-width: max-content;
 }
 
 footer .footer-end .footer-end-links li a {
@@ -625,12 +634,14 @@ footer .footer-end .footer-end-links li a:hover {
     min-width: max-content;
 }
 
-@media screen and (max-width: 64em) {
+@media screen and (max-width: 90em) {
+    .swiper-pagination {
+        width: 100% !important;
+    }
     .container {
         width: 100%;
         margin: 0;
     }
-    /* dropdown */
     .dropdown-container {
         top: 10%;
         left: 5%;
@@ -664,7 +675,7 @@ footer .footer-end .footer-end-links li a:hover {
     }
 }
 
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 74em) {
     .navbar-desktop {
         display: none;
     }
@@ -677,6 +688,9 @@ footer .footer-end .footer-end-links li a:hover {
         font-size: 0.9rem;
         padding: 1.3em;
     }
+}
+
+@media screen and (max-width: 90em) {
     .navbar-mobile .right-menu a {
         vertical-align: middle;
     }
@@ -1120,4 +1134,14 @@ footer .footer-end .footer-end-links li a:hover {
     footer .footer-end .footer-end-links li {
         margin-right: 0.3rem;
     }
+}
+
+.top {
+    position: sticky;
+    float: right;
+    padding: 5px 20px 5px 20px;
+    bottom: 20px;
+    background: #d9d9d9;
+    border-radius: 10px;
+    z-index: 10;
 }

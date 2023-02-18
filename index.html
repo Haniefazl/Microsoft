@@ -5,19 +5,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A clone of the microsoft homepage" />
-    <meta name="author" content="Michael Appiah" />
     <title>Microsoft Project</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-
-    <div class="container">
-        <!-- Navbar -->
-        <nav class="navbar-desktop">
-            <img src="images/logo.png" alt="Microsoft Logo" class="logo" />
+    <nav class="navbar-desktop">
+        <a href="#" class="logo"><img src="images/logo.png" alt="Microsoft Logo" /></a>
+        <div class="nav">
             <ul class="main-menu">
                 <li>
                     <a href="#">Microsoft 365</a>
@@ -30,292 +26,293 @@
                 <li><a href="#">Small Business</a></li>
                 <li><a href="#">Support</a></li>
             </ul>
-            <ul class="right-menu">
-                <li class="dropdown-btn">
-                    <a href="#">All Microsoft</a>
-                    <img src="svg/down-arrow.svg" alt="down arrow" />
-                </li>
-                <li>
-                    <a href="#"><img src="svg/search.svg" class="search-icon" alt="search icon" /></a>
-                </li>
-                <li>
-                    <a href="#"><img src="svg/cart.svg" class="cart-icon" alt="cart icon" /></a>
-                </li>
-                <li>
-                    <a href="#"><img src="svg/profile.svg" class="profile-icon" alt="profile icon" /></a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="navbar-mobile">
-            <div>
-                <button class="hamburger">
+        </div>
+        <ul class="right-menu">
+            <li class="dropdown-btn nav">
+                <a href="#">All Microsoft</a>
+                <img src="svg/down-arrow.svg" alt="down arrow" />
+            </li>
+            <li>
+                <a href="#" class="icon searching"><img src="svg/search.svg" class="search-icon icons" alt="search icon" /></a>
+                <div id="search" class="hide">
+                    <input type="search" class="input1" Placeholder="ُSerch Microsoft.com"><button class="button1">Cancel</button>
+                </div>
+            </li>
+            <li class="nav">
+                <a href="#"><img src="svg/cart.svg" class="cart-icon" alt="cart icon" /></a>
+            </li>
+            <li class="nav">
+                <a href="#"><img src="svg/profile.svg" class="profile-icon" alt="profile icon" /></a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="navbar-mobile nav">
+
+        <div>
+            <button class="hamburger nav">
 						<span class="bar bar-one"></span>
 						<span class="bar bar-two"></span>
 						<span class="bar bar-three"></span>
 					</button>
-                <a href="#"><img src="svg/search.svg" class="search-icon" alt="search icon" /></a>
+            <a href="#" class="icon searching"><img src="svg/search.svg" class="search-icon icons" alt="search icon" /></a>
+            <div id="search2" class="hide">
+                <input type="search" class="input1" Placeholder="ُSerch Microsoft.com"><button class="button1">Cancel</button>
             </div>
-            <img src="images/logo.png" alt="Microsoft Logo" class="logo" />
-            <div class="right-menu">
-                <a href="#"><img src="svg/cart.svg" class="cart-icon" alt="cart icon" /></a>
-                <a href="#"><img src="svg/profile.svg" class="profile-icon" alt="profile icon" /></a>
-            </div>
+        </div>
+        <img src="images/logo.png" alt="Microsoft Logo" class="logo nav" />
+        <div class="right-menu nav">
+            <a href="#"><img src="svg/cart.svg" class="cart-icon" alt="cart icon" /></a>
+            <a href="#"><img src="svg/profile.svg" class="profile-icon" alt="profile icon" /></a>
+        </div>
+    </nav>
+    <div class="dropdown-container">
+        <nav>
+            <ul>
+                <h2>Software</h2>
+                <li><a href="#">Windows Apps</a></li>
+                <li><a href="#">AI</a></li>
+                <li><a href="#">Outlook</a></li>
+                <li><a href="#">OneDrive</a></li>
+                <li><a href="#">Microsoft Teams</a></li>
+                <li><a href="#">OneNote</a></li>
+                <li><a href="#">Microsoft Edge</a></li>
+                <li><a href="#">Skype</a></li>
+            </ul>
+            <ul>
+                <h2>PC &amp; devices</h2>
+                <li><a href="#">Computers</a></li>
+                <li><a href="#">Shop Xbox</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">VR &amp; mixed reality</a></li>
+                <li><a href="#">Phones</a></li>
+            </ul>
+            <ul>
+                <h2>Entertainment</h2>
+                <li><a href="#">Xbox Game Pass Ultimate</a></li>
+                <li><a href="#">PC Game Pass</a></li>
+                <li><a href="#">Xbox games</a></li>
+                <li><a href="#">PC games</a></li>
+                <li><a href="#">Windoes digital games</a></li>
+                <li><a href="#">Movies &amp; TV</a></li>
+            </ul>
+            <ul>
+                <h2>Business</h2>
+                <li><a href="#">Microsoft Cloud</a></li>
+                <li><a href="#">Microsoft Security</a></li>
+                <li><a href="#">Dynamic 365</a></li>
+                <li><a href="#">Microsoft 365 for business</a></li>
+                <li><a href="#">Microsoft Power Platform</a></li>
+                <li><a href="#">Windows 365</a></li>
+                <li><a href="#">Microsoft Industry</a></li>
+                <li><a href="#">Small Business</a></li>
+            </ul>
+            <ul>
+                <h2>Developer &amp; IT</h2>
+                <li><a href="#">Azure</a></li>
+                <li><a href="#">Developer Center</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Microsoft Learn</a></li>
+                <li><a href="#">Microsoft Tech Commmunity</a></li>
+                <li><a href="#">Azure Marketplace</a></li>
+                <li><a href="#">AppSource</a></li>
+                <li><a href="#">Visual Studio</a></li>
+            </ul>
+            <ul>
+                <h2>Other</h2>
+                <li><a href="#">Microsoft Rewards</a></li>
+                <li><a href="#">Free downloads &amp; security</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Virtual workshops and training</a></li>
+                <li><a href="#">Gift cards</a></li>
+                <li><a href="#">Students and parents deals</a></li>
+                <li><a href="#">Licensing</a></li>
+                <li><a href="#">Microsoft Experience Center</a></li>
+            </ul>
         </nav>
-        <!-- dropdown -->
-        <div class="dropdown-container">
-            <nav>
-                <ul>
-                    <h2>Software</h2>
-                    <li><a href="#">Windows Apps</a></li>
-                    <li><a href="#">AI</a></li>
-                    <li><a href="#">Outlook</a></li>
-                    <li><a href="#">OneDrive</a></li>
-                    <li><a href="#">Microsoft Teams</a></li>
-                    <li><a href="#">OneNote</a></li>
-                    <li><a href="#">Microsoft Edge</a></li>
-                    <li><a href="#">Skype</a></li>
-                </ul>
-                <ul>
-                    <h2>PC &amp; devices</h2>
-                    <li><a href="#">Computers</a></li>
-                    <li><a href="#">Shop Xbox</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">VR &amp; mixed reality</a></li>
-                    <li><a href="#">Phones</a></li>
-                </ul>
-                <ul>
-                    <h2>Entertainment</h2>
-                    <li><a href="#">Xbox Game Pass Ultimate</a></li>
-                    <li><a href="#">PC Game Pass</a></li>
-                    <li><a href="#">Xbox games</a></li>
-                    <li><a href="#">PC games</a></li>
-                    <li><a href="#">Windoes digital games</a></li>
-                    <li><a href="#">Movies &amp; TV</a></li>
-                </ul>
-                <ul>
-                    <h2>Business</h2>
-                    <li><a href="#">Microsoft Cloud</a></li>
-                    <li><a href="#">Microsoft Security</a></li>
-                    <li><a href="#">Dynamic 365</a></li>
-                    <li><a href="#">Microsoft 365 for business</a></li>
-                    <li><a href="#">Microsoft Power Platform</a></li>
-                    <li><a href="#">Windows 365</a></li>
-                    <li><a href="#">Microsoft Industry</a></li>
-                    <li><a href="#">Small Business</a></li>
-                </ul>
-                <ul>
-                    <h2>Developer &amp; IT</h2>
-                    <li><a href="#">Azure</a></li>
-                    <li><a href="#">Developer Center</a></li>
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">Microsoft Learn</a></li>
-                    <li><a href="#">Microsoft Tech Commmunity</a></li>
-                    <li><a href="#">Azure Marketplace</a></li>
-                    <li><a href="#">AppSource</a></li>
-                    <li><a href="#">Visual Studio</a></li>
-                </ul>
-                <ul>
-                    <h2>Other</h2>
-                    <li><a href="#">Microsoft Rewards</a></li>
-                    <li><a href="#">Free downloads &amp; security</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Virtual workshops and training</a></li>
-                    <li><a href="#">Gift cards</a></li>
-                    <li><a href="#">Students and parents deals</a></li>
-                    <li><a href="#">Licensing</a></li>
-                    <li><a href="#">Microsoft Experience Center</a></li>
-                </ul>
-            </nav>
-            <p class="site-map">
-                view sitemap
-                <img src="svg/chevron-right.svg" alt="" />
-            </p>
-        </div>
-        <div class="dropdown-mobile">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Microsoft 365</a>
-                    </li>
-                    <li><a href="#">Teams</a></li>
-                    <li><a href="#">Windows</a></li>
-                    <li><a href="#">Surface</a></li>
-                    <li><a href="#">Xbox</a></li>
-                    <li><a href="#">Deals</a></li>
-                    <li><a href="#">Small Business</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li>
-                        <div class="sublist-title">
-                            <a href="#">Software</a>
-                            <img src="svg/down-arrow.svg" alt="down arrow" class="sublist-btn" />
-                        </div>
-                        <ul class="sublist">
-                            <li><a href="#">Windows Apps</a></li>
-                            <li><a href="#">AI</a></li>
-                            <li><a href="#">Outlook</a></li>
-                            <li><a href="#">OneDrive</a></li>
-                            <li><a href="#">Microsoft Teams</a></li>
-                            <li><a href="#">OneNote</a></li>
-                            <li><a href="#">Microsoft Edge</a></li>
-                            <li><a href="#">Skype</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div class="sublist-title">
-                            <a href="#">PC &amp; devices</a>
-                            <img src="svg/down-arrow.svg" alt="down arrow" class="sublist-btn" />
-                        </div>
-                        <ul class="sublist">
-                            <li><a href="#">Computers</a></li>
-                            <li><a href="#">Shop Xbox</a></li>
-                            <li><a href="#">Accessories</a></li>
-                            <li><a href="#">VR &amp; mixed reality</a></li>
-                            <li><a href="#">Phones</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div class="sublist-title">
-                            <a href="#">Entertainment</a>
-                            <img src="svg/down-arrow.svg" alt="down arrow" class="sublist-btn" />
-                        </div>
-                        <ul class="sublist">
-                            <li><a href="#">Xbox Game Pass Ultimate</a></li>
-                            <li><a href="#">PC Game Pass</a></li>
-                            <li><a href="#">Xbox games</a></li>
-                            <li><a href="#">PC games</a></li>
-                            <li><a href="#">Windoes digital games</a></li>
-                            <li><a href="#">Movies &amp; TV</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div class="sublist-title">
-                            <a href="#">Business</a>
-                            <img src="svg/down-arrow.svg" alt="down arrow" class="sublist-btn" />
-                        </div>
-                        <ul class="sublist">
-                            <li><a href="#">Microsoft Cloud</a></li>
-                            <li><a href="#">Microsoft Security</a></li>
-                            <li><a href="#">Dynamic 365</a></li>
-                            <li><a href="#">Microsoft 365 for business</a></li>
-                            <li><a href="#">Microsoft Power Platform</a></li>
-                            <li><a href="#">Windows 365</a></li>
-                            <li><a href="#">Microsoft Industry</a></li>
-                            <li><a href="#">Small Business</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div class="sublist-title">
-                            <a href="#">Developer &amp; IT</a>
-                            <img src="svg/down-arrow.svg" alt="down arrow" class="sublist-btn" />
-                        </div>
-                        <ul class="sublist">
-                            <li><a href="#">Azure</a></li>
-                            <li><a href="#">Developer Center</a></li>
-                            <li><a href="#">Documentation</a></li>
-                            <li><a href="#">Microsoft Learn</a></li>
-                            <li><a href="#">Microsoft Tech Commmunity</a></li>
-                            <li><a href="#">Azure Marketplace</a></li>
-                            <li><a href="#">AppSource</a></li>
-                            <li><a href="#">Visual Studio</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div class="sublist-title">
-                            <a href="#">Other</a>
-                            <img src="svg/down-arrow.svg" alt="down arrow" class="sublist-btn" />
-                        </div>
-                        <ul class="sublist">
-                            <li><a href="#">Microsoft Rewards</a></li>
-                            <li><a href="#">Free downloads &amp; security</a></li>
-                            <li><a href="#">Education</a></li>
-                            <li><a href="#">Virtual workshops and training</a></li>
-                            <li><a href="#">Gift cards</a></li>
-                            <li><a href="#">Students and parents deals</a></li>
-                            <li><a href="#">Licensing</a></li>
-                            <li><a href="#">Microsoft Experience Center</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">View Sitemap</a></li>
-                </ul>
-            </nav>
-        </div>
+        <p class="site-map">
+            view sitemap
+            <img src="svg/chevron-right.svg" alt="" />
+        </p>
+    </div>
+    <div class="dropdown-mobile">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Microsoft 365</a>
+                </li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">Windows</a></li>
+                <li><a href="#">Surface</a></li>
+                <li><a href="#">Xbox</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Small Business</a></li>
+                <li><a href="#">Support</a></li>
+                <li>
+                    <div class="sublist-title">
+                        <a href="#">Software</a>
+                        <img src="svg/down-arrow.svg" alt="down arrow" class="sublist-btn" />
+                    </div>
+                    <ul class="sublist">
+                        <li><a href="#">Windows Apps</a></li>
+                        <li><a href="#">AI</a></li>
+                        <li><a href="#">Outlook</a></li>
+                        <li><a href="#">OneDrive</a></li>
+                        <li><a href="#">Microsoft Teams</a></li>
+                        <li><a href="#">OneNote</a></li>
+                        <li><a href="#">Microsoft Edge</a></li>
+                        <li><a href="#">Skype</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="sublist-title">
+                        <a href="#">PC &amp; devices</a>
+                        <img src="svg/down-arrow.svg" alt="down arrow" class="sublist-btn" />
+                    </div>
+                    <ul class="sublist">
+                        <li><a href="#">Computers</a></li>
+                        <li><a href="#">Shop Xbox</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">VR &amp; mixed reality</a></li>
+                        <li><a href="#">Phones</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="sublist-title">
+                        <a href="#">Entertainment</a>
+                        <img src="svg/down-arrow.svg" alt="down arrow" class="sublist-btn" />
+                    </div>
+                    <ul class="sublist">
+                        <li><a href="#">Xbox Game Pass Ultimate</a></li>
+                        <li><a href="#">PC Game Pass</a></li>
+                        <li><a href="#">Xbox games</a></li>
+                        <li><a href="#">PC games</a></li>
+                        <li><a href="#">Windoes digital games</a></li>
+                        <li><a href="#">Movies &amp; TV</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="sublist-title">
+                        <a href="#">Business</a>
+                        <img src="svg/down-arrow.svg" alt="down arrow" class="sublist-btn" />
+                    </div>
+                    <ul class="sublist">
+                        <li><a href="#">Microsoft Cloud</a></li>
+                        <li><a href="#">Microsoft Security</a></li>
+                        <li><a href="#">Dynamic 365</a></li>
+                        <li><a href="#">Microsoft 365 for business</a></li>
+                        <li><a href="#">Microsoft Power Platform</a></li>
+                        <li><a href="#">Windows 365</a></li>
+                        <li><a href="#">Microsoft Industry</a></li>
+                        <li><a href="#">Small Business</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="sublist-title">
+                        <a href="#">Developer &amp; IT</a>
+                        <img src="svg/down-arrow.svg" alt="down arrow" class="sublist-btn" />
+                    </div>
+                    <ul class="sublist">
+                        <li><a href="#">Azure</a></li>
+                        <li><a href="#">Developer Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Microsoft Learn</a></li>
+                        <li><a href="#">Microsoft Tech Commmunity</a></li>
+                        <li><a href="#">Azure Marketplace</a></li>
+                        <li><a href="#">AppSource</a></li>
+                        <li><a href="#">Visual Studio</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="sublist-title">
+                        <a href="#">Other</a>
+                        <img src="svg/down-arrow.svg" alt="down arrow" class="sublist-btn" />
+                    </div>
+                    <ul class="sublist">
+                        <li><a href="#">Microsoft Rewards</a></li>
+                        <li><a href="#">Free downloads &amp; security</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Virtual workshops and training</a></li>
+                        <li><a href="#">Gift cards</a></li>
+                        <li><a href="#">Students and parents deals</a></li>
+                        <li><a href="#">Licensing</a></li>
+                        <li><a href="#">Microsoft Experience Center</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">View Sitemap</a></li>
+            </ul>
+        </nav>
+    </div>
 
-        <!-- Main Header -->
-        <header>
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <div class="showcase-one">
-                            <div class="showcase-image">
-                                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Laptop-5-M1-Platinum-Graphite-01-1:VP1-539x440" alt="showcase one" />
-                            </div>
+    <header>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="showcase-one">
+                        <div class="showcase-image">
+                            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Laptop-5-M1-Platinum-Graphite-01-1:VP1-539x440" alt="showcase one" />
+                        </div>
 
-                            <div class="showcase-text">
-                                <h2>
-                                    Save up to $200 on Surface Laptop 5
-                                </h2>
-                                <p>
-                                    Premium Office apps, extra cloud storage, advanced security, and more&mdash;all in one convenient subscription
-                                </p>
-                                <div class="showcase-btns">
-                                    <a href="#" class="btn-blue"><span>
+                        <div class="showcase-text">
+                            <h2>
+                                Save up to $200 on Surface Laptop 5
+                            </h2>
+                            <p>
+                                Premium Office apps, extra cloud storage, advanced security, and more&mdash;all in one convenient subscription
+                            </p>
+                            <div class="showcase-btns">
+                                <a href="#" class="btn-blue"><span>
                                         Shop Surface Laptop 5</span
 											><img
 												src="svg/chevron-right.svg"
 												alt="chevron"
 												class="chevron"
 										/></a>
-                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="showcase-two">
-                            <div class="showcase-image">
-                                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Hero-Xbox-Series-S-Angled-with-Controller:VP1-539x440" alt="showcase two" />
-                            </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="showcase-two">
+                        <div class="showcase-image">
+                            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Hero-Xbox-Series-S-Angled-with-Controller:VP1-539x440" alt="showcase two" />
+                        </div>
 
-                            <div class="showcase-text">
-                                <h2>$60 off Xbox Series S</h2>
-                                <p>
-                                    Score savings on the smallest, sleekest Xbox yet. Only $239.99, offer ends 3/31.
-                                </p>
-                                <div class="showcase-btns">
-                                    <a href="#" class="btn-blue"><span>
+                        <div class="showcase-text">
+                            <h2>$60 off Xbox Series S</h2>
+                            <p>
+                                Score savings on the smallest, sleekest Xbox yet. Only $239.99, offer ends 3/31.
+                            </p>
+                            <div class="showcase-btns">
+                                <a href="#" class="btn-blue"><span>
                                         Shop Xbox Series S</span
 											><img
 												src="svg/chevron-right.svg"
 												alt="chevron"
 												class="chevron"
 										/></a>
-                                </div>
                             </div>
                         </div>
                     </div>
-
-                    ...
                 </div>
 
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
+            </div>
+            <div class="navigation-slider">
                 <div class="swiper-button-prev">
                     <div class="swiper-icon">
                         <img src="svg/chevron-left.svg" alt="left chevron" />
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
                 <div class="swiper-button-next">
                     <div class="swiper-icon">
                         <img src="svg/chevron-right.svg" alt=" right chevron" />
                     </div>
                 </div>
             </div>
-        </header>
-        <!-- Devices Section -->
+        </div>
+    </header>
+    <div class="container">
+
         <section class="devices">
             <div class="device">
                 <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/surface-go2-link-list-120x120?wid=40&hei=40" alt="tablet icon" />
@@ -344,7 +341,6 @@
             </div>
         </section>
 
-        <!-- Microsoft Products Section -->
         <section class="products">
             <div class="home-cards">
                 <article>
@@ -402,7 +398,6 @@
             </div>
         </section>
 
-        <!-- Xbox section -->
         <section class="xbox">
             <div class="xbox-image">
                 <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Slim-Multi-Canvas-AEM-Xbox-Elderberry:VP1-539x440" alt="xbox" />
@@ -420,7 +415,6 @@
             </div>
         </section>
 
-        <!-- Microsoft Business Section -->
         <section class="microsoft-business">
             <h2>For Business</h2>
             <div class="home-cards">
@@ -477,13 +471,9 @@
             </div>
         </section>
 
-        <!-- Microsoft Communities Section -->
         <section class="communities">
-            <!-- Slider main container -->
             <div class="swiper">
-                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
                     <div class="swiper-slide">
                         <div class="showcase-one">
                             <div class="showcase-image">
@@ -524,25 +514,23 @@
                         </div>
                     </div>
 
-                    ...
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev">
-                    <div class="swiper-icon">
-                        <img src="svg/chevron-left.svg" alt="left chevron" />
+                <div class="navigation-slider">
+                    <div class="swiper-button-prev">
+                        <div class="swiper-icon">
+                            <img src="svg/chevron-left.svg" alt="left chevron" />
+                        </div>
                     </div>
-                </div>
-                <div class="swiper-button-next">
-                    <div class="swiper-icon">
-                        <img src="svg/chevron-right.svg" alt=" right chevron" />
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next">
+                        <div class="swiper-icon">
+                            <img src="svg/chevron-right.svg" alt=" right chevron" />
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Connect with us section -->
+        <a href="#" class="top">Back to Top &#8593;</a>
         <section class="connect">
             <div>
                 <span>Follow Microsoft</span>
@@ -550,11 +538,11 @@
                 <a href="#"><img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Twitter%202x?scl=1" alt="twitter icon" /></a>
                 <a href="#"><img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Linkedin%202x?scl=1" alt="linkedin icon" /></a>
             </div>
+
         </section>
-        <a href="#" class="top">Back to Top &#8593;</a>
+
 
     </div>
-    <!-- Footer  -->
     <footer>
 
         <div>
@@ -651,9 +639,9 @@
         </div>
     </footer>
 
-    <!-- Script Files -->
-    <script type="module" src="swiper-script.js"></script>
-    <script defer src="script.js"></script>
+    <script type="module" src="js/swiper-script.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
